@@ -7,3 +7,8 @@
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
+
+export GIT_EDITOR=nano
+export EDITOR=nano
+export VISUAL=sublime
+
