@@ -174,55 +174,14 @@ fshomeupd = lain.widgets.fs({
     partition = "/home"
 })
 
--- Battery OLD
---batwidget = lain.widgets.bat({
---    settings = function()
---        bat_perc = bat_now.perc
---        if bat_perc == "N/A" then bat_perc = "Plug" end-
---        widget:set_markup(markup(gray, " Bat ") .. bat_perc .. " ")
---    end
---})
-
--- The batery widget 
-http://awesome.naquadah.org/wiki/Battery_Widget_using_powersave
-mybattmon = widget({ type = "textbox", name = "mybatmon", align = "right"})
-
---returns a string with battery info
-Function battery_status ()
-	local battery = 0
-	local time = 0
-	local state = 0 -- discharging -1, charging 1, nothing o
-	local icon = ""
-	local fd = io.popen("powersave -b, "r")
-	if not fd then
-		do return "no info" end
-	end
-	local text = "fd:read("*a")
-	io.close(fd)
-	if string.match(text, "Remaining precent: (%d+)")
-		state = -1
-		icon = "▾"
-	else
-		state = 1
-		icon = "▴"
-	end
-
-	battery = string.match(text, "Remaning percent: (%d+)")
-	time = string.match(text, "Remaining minutes: (%d+)")
-	-- above string does not allways match
-	if not time then 
-		time = string.match(text, "(%d+) minutes until fully charged")
-	end
-
-	return battery .. "%/" .. time .. "m" ,, "<b>" .. icon .. "</b>"
-end
-
--- Hook called every second
-function hook_timer ()
-	--mytextbox.text = " " -- os.date() .. " "
-	mybattmon.text = " " .. battery_status() .. " "
-end
--- End battery status
+-- Battery
+batwidget = lain.widgets.bat({
+    settings = function()
+        bat_perc = bat_now.perc
+        if bat_perc == "N/A" then bat_perc = "Plug" end-
+        widget:set_markup(markup(gray, " Bat ") .. bat_perc .. " ")
+    end
+})
 
 --
 -- Net checker
