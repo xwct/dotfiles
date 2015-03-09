@@ -178,7 +178,7 @@ fshomeupd = lain.widgets.fs({
 batwidget = lain.widgets.bat({
     settings = function()
         bat_perc = bat_now.perc
-        if bat_perc == "N/A" then bat_perc = "Plug" end-
+        if bat_perc == "N/A" then bat_perc = "Plug" end
         widget:set_markup(markup(gray, " Bat ") .. bat_perc .. " ")
     end
 })
