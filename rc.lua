@@ -201,10 +201,10 @@ Function battery_status ()
 	io.close(fd)
 	if string.match(text, "Remaining precent: (%d+)")
 		state = -1
-		icon = ""
+		icon = "▾"
 	else
 		state = 1
-		icon = ""
+		icon = "▴"
 	end
 
 	battery = string.match(text, "Remaning percent: (%d+)")
