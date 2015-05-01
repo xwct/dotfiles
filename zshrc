@@ -110,5 +110,4 @@ setopt TRANSIENT_RPROMPT
 alias nmclid="nmcli d"
 
 #Date variable
-now=$(date +"%Y_%d_%m_%H_%M")
-
+now=$(date +"%Y-%d-%m-%H:%M")
