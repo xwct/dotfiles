@@ -105,3 +105,10 @@ RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
 
 # only display rprompt for current line
 setopt TRANSIENT_RPROMPT
+
+#Alias
+alias nmclid="nmcli d"
+
+#Date variable
+now=$(date +"%Y_%d_%m_%H_%M")
+
