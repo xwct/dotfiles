@@ -15,4 +15,7 @@ xmodmap -e "clear Lock"
 ~/dotfiles/bin/status.sh &
 urxvtd -q -o -f
 
+export EDITOR=vim
+export VISUAL=visual-studio-code
+
 exec awesome
