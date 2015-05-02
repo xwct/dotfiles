@@ -3,6 +3,3 @@
 #
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
-
-export VISUAL=sublime
-export EDITOR=nano
