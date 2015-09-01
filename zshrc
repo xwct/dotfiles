@@ -108,6 +108,6 @@ setopt TRANSIENT_RPROMPT
 
 #Alias
 alias nmclid="nmcli d"
-
+alias fuck="sudo !!"
 #Date variable
 now=$(date +"%Y-%d-%m-%H:%M")
