@@ -2,7 +2,6 @@
 xrdb ~/.Xresources
 
 xbindkeys
-xfce4-power-manager
 
 xset r rate 200 25
 setxkbmap -layout no -variant nodeadkeys
@@ -19,4 +18,4 @@ urxvtd -q -o -f
 export EDITOR=vim
 export VISUAL=visual-studio-code
 
-exec awesome
+exec dwm
