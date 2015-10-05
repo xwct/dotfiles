@@ -12,7 +12,8 @@ setxkbmap -option shift:both_capslock
 xmodmap -e "clear Lock"
 
 // daemons
-~/dotfiles/bin/status.sh &
+//someday i will make this script ...someday
+//~/dotfiles/bin/status.sh &
 urxvtd -q -o -f
 
 export EDITOR=vim
