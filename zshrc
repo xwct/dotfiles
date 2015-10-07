@@ -108,6 +108,11 @@ setopt TRANSIENT_RPROMPT
 
 #Alias
 alias nmclid="nmcli d"
+alias fuck='sudo $(fc -ln -1)'
 
 #Date variable
 now=$(date +"%Y-%d-%m-%H:%M")
+
+#EDITOR
+EDITOR=vim
+VISUAL=visual-studio-code
