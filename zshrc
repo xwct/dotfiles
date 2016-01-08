@@ -100,7 +100,7 @@ compinit
 colors
 
 # setup prompt
-PROMPT="%n@%m %{$fg_bold[yellow]%}%2~%{$reset_color%}%# "
+PROMPT="%n@%m %{$fg_bold[yellow]%}%2~%{$reset_color%}"
 RPROMPT="[%{$fg_no_bold[yellow]%}%?%{$reset_color%}]"
 
 # only display rprompt for current line
