@@ -7,6 +7,8 @@ HISTFILESIZE=100000
 # brew path stuff
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+# bash script path
+export PATH="/Users/ole/code/bash:$PATH"
 
 # general aliases
 alias ..='cd ..'
@@ -45,4 +47,26 @@ alias sshp='ssh $ip -p 42424' #potet
 alias ez='vim ~/.bashrc'
 alias sz='source ~/.bashrc'
 
+# variables
+export SHELL=/bin/bash
 export EDITOR=/usr/bin/vim
+
+# rbenv stuff
+eval export PATH="/Users/ole/.rbenv/shims:${PATH}"
+export RBENV_SHELL=bash
+source '/usr/local/Cellar/rbenv/1.1.1/libexec/../completions/rbenv.bash' 
+command rbenv rehash 2>/dev/null 
+rbenv() { 
+    local command 
+    command="$1" 
+    if [ "$#" -gt 0 ]; then 
+        shift 
+    fi 
+    case "$command" in 
+    rehash|shell) 
+        eval "$(rbenv "sh-$command" "$@")";; 
+    *) 
+        command rbenv "$command" "$@";; 
+    esac 
+}
+
