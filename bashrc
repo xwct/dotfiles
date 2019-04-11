@@ -25,6 +25,7 @@ alias mkdir='mkdir -p'
 alias myip='wget http://ipinfo.io/ip -qO -'
 alias rmr='rm -r'
 alias wd='pwd'
+alias mux='tmuxinator'
 
 # git
 alias ga='git add -A'
