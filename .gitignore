@@ -1,4 +1,7 @@
 # osx ignores
+# run this to set as global gitignore
+# ln -s ./.gitignore /Users/$USER/.gitignore_global
+# git config --global core.excludesfile ~/.gitignore_global
 # General
 .DS_Store
 .AppleDouble
